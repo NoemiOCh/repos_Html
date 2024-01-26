@@ -9,18 +9,17 @@
 
 <body>
     <h1>"Etiquetas HTML"</h1>
+    <p>Lorem ipsum dolor, <b>HTML5</b> sit amet consectetur adipisicing elit. Laborum laboriosam accusamus delectus.
+        Quae, corrupti numquam ab, illum omnis rerum nihil, ut voluptas est maxime temporibus cum. Ducimus facere
+        repudiandae consectetur? </p>
     <ol>
-        <p>Lorem ipsum dolor, <b>HTML5</b> sit amet consectetur adipisicing elit. Laborum laboriosam accusamus delectus.
-            Quae, corrupti numquam ab, illum omnis rerum nihil, ut voluptas est maxime temporibus cum. Ducimus facere
-            repudiandae consectetur? </p>
-        <br>
-        <br>
         <li>&lt;a&gt;</li>
         <p>Permite anclar una dirección URL <br>
             Ejemplo:</p>
         <a href="https://github.com/NoemiOCh" target="_blank">Soy un Link</a>
         <br>
         <br>
+
         <li>&lt;abbr&gt;</li>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ipsam quo natus nobis veniam voluptas at!
             Odio quia harum voluptate reprehenderit porro. Consectetur corporis, ducimus nostrum unde sapiente iure
@@ -29,56 +28,189 @@
         </p>
         <p>Yo hago<abbr title="Hyper Mark Languaje">HTML</abbr>
         </p>
+
         <li>&lt;address&gt;</li>
         <br>
         <address>Escrito por <a href="#">Noemi</a></address>
         <br>
+
         <li>&lt;article&gt;</li>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis nulla, sapiente sequi aliquid porro fugit ut
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis nulla, sapiente sequi aliquid porro fugit ut
             rerum, corporis, eveniet accusantium possimus? Cum, minus. Qui ab, molestiae excepturi earum rem blanditiis!
             <br> Fuentes potenciales para el elemento article:
-        <ul> Publicación en el foro </ul>
-        <ul> Entrada en el blog </ul>
-        <ul> Noticia </ul>
+        </p>
+        <ul style="list-style: disc;">
+            <li> Publicación en el foro </li>
+            <li> Entrada en el blog </li>
+            <li> Noticia </li>
+        </ul>
+                <p><b>NOTA:</b> &lt;article&gt; no se muestra como algo especial en un navegador. sin embrgo, puede usar CSS para darle diseño</p>
+        <a href="./example/article.html" target="_blank">Ejemplo de CSS de article</a>
         <br>
-        <b>NOTA:</b>
-        < article> no se muestra como algo especial en un navegador. sin embrgo, puede usar CSS para darle diseño
-            <br>
-            </p>
-            <a href="./example/article.html" target="_blank">Ejemplo de CSS de article</a>
-            <br>
-            <br>
-            <li>&lt;aside&gt;</li>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eligendi laudantium reiciendis vero
-                cupiditate delectus sint eos perferendis totam, neque mollitia quae quaerat ex ab id porro rem sit
-                doloremque!</p>
-            <b>Sugerencia:</b> aside se coloca a mednudo como una barra lateral en un documento
-            <br>
+
+        <li>&lt;aside&gt;</li>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eligendi laudantium reiciendis vero
+            cupiditate delectus sint eos perferendis totam, neque mollitia quae quaerat ex ab id porro rem sit
+            doloremque!
+           <b>Sugerencia:</b> aside se coloca a mednudo como una barra lateral en un documento
+           <br>
             <b>Nota:</b> Este elemento no se muestra como algo especial en el navegador. Sin embargo, se puede usar CSS
-            pra diseñar el aside
-            <br>
-            <a href=".\example\aside.html" target="_blank">Ejemplo aside con CSS</a>
+        pra diseñar el aside
+        </p>
+        <br>
+        <a href=".\example\aside.html" target="_blank">Ejemplo aside con CSS</a>
+        <br> <br>
+
+        <li>&lt;audio&gt;</li>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eligendi laudantium reiciendis vero
+            cupiditate delectus sint eos perferendis totam, neque mollitia quae quaerat ex ab id porro rem sit
+            doloremque!</p>
+        Ejemplo <br> <br>
+        <audio controls>
+            <source src=".\audio\teclado-mecanografia.mp3" </audio>
+        </audio>
+        <br>
+
+        <li>&lt;button&gt;</li>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eligendi laudantium reiciendis vero
+            cupiditate delectus sint eos perferendis totam, neque mollitia quae quaerat ex ab id porro rem sit
+            doloremque!
+        <b>Sugenrencia:</b>Especifique siempre el type de un &lt;button&gt; , para indicar a lso navegadores que
+        tipo de boton es <br>
+        <b>Consejo: Puede diseñar botones facilmente con CSS</b><br> Ejemplo:
+        </p> <br> 
+        <button name="button 1" type="button">Click me</button>
+        <button name="button 2" type="button">Click me</button>
+        <br> <br>
+
+        <li>&lt;formn&gt;</li>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eligendi laudantium reiciendis vero
+            cupiditate delectus sint eos perferendis totam, neque mollitia quae quaerat ex ab id porro rem sit
+            doloremque!</p>
+            <ul style="list-style: disc;"> 
+                <li> &lt;input type=text&gt; </li> <br>
+                Muestra un campo de entada <br>
+                <input type="text"> <br>
+                <li> &lt;input type=radio&gt; </li> <br>
+                <input type="radio"> <input type="radio"> <input type="radio">
+                <li> &lt;input type=checkbox&gt; </li> <br>
+                <input type="checkbox"> <input type="checkbox">
+                <li> &lt;input type=submit&gt; </li> <br>
+                <input type="submit">
+                <li> &lt;input type=button&gt; </li> <br>
+                <input type="button"> <br> <br>
+            </ul>
+        <a href=".\example\hgroup.html" target="_blank">Ejemplo form</a> <br>
+        <br>
+
+        <li>&lt;footer&gt;</li>
+        <p>Define un pie de pagina para un docto o seccion
+            <br> Normalmente contiene:
+        </p>
+        <ul> Informacion de autoria </ul>
+        <ul> Informacion de registro </ul>
+        <ul> Mapa del sitio </ul>
+        <ul> Volver a los enlaces superiores </ul>
+        <ul> Documentos relacionados </ul> <br>
+        <a href=".\example\footer.html" target="_blank">Ejemplo de footer</a> <br> <br>
+
+        <li>&lt;Header&gt;</li>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sint illo commodi quam consectetur optio esse
+            eum, placeat temporibus, blanditiis eos quis hic, laudantium iusto sapiente vitae modi? Saepe, nulla.
+            <br> Normalmente contiene:
+        </p>
+        <ul> Uno o mas ecabezados(&lt;h1&gt; - &lt;h6&gt;) </ul>
+        <ul> Logotipo o icono </ul>
+        <ul> Informacion de autoria </ul> <br>
+        <b>Nota:</b> puede tener varios &lt;header&gt; en un docto HTML. Sib embargo, no se puede solocoar dentro de un
+        &lt;footer&gt;, &lt;addres&gt; u otro &lt;header&gt;
+        <br>Ejemplo: <br>
+        <Header> <b>Encabezador de la página principal</b></Header> <br>
+
+        <li>&lt;hgruop&gt;</li>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid quo officia exercitationem temporibus
+            consequatur. Doloremque ducimus nulla at aut nisi? Obcaecati quia hic consequatur perferendis ab aliquam
+            voluptatibus quisquam dolorum?
+        </p> <br>
+        <a href=".\example\hgroup.html" target="_blank">Ejemplo de hgroup</a> <br> <br>
+        <br>
+        <li>&lt;h1&gt; &lt;h6&gt;</li>
+        <p> Se utiliza para definir encabezados HMTL <br>
+            <br>Ejemplo: <br>
+        </p>
+        <h1><b>Hola mundo!</b></h1>
+        <h6><b>Hola mundo!</b></h6>
+
+        <li>&lt;img&gt;</li>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus magnam, ipsam explicabo ducimus quo placeat
+            dolor optio sed doloribus, dicta natus pariatur unde dolorum suscipit omnis exercitationem eligendi
+            architecto eos!
+            <br>Ejemplo: <br>
+        </p>
+        <br>
+        <a href=".\example\img.html" target="_blank">Ejemplo de hgroup</a> <br> <br>
+
+        <li>&lt;img&gt;</li>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus magnam, ipsam explicabo ducimus quo placeat
+            dolor optio sed doloribus, dicta natus pariatur unde dolorum suscipit omnis exercitationem eligendi
+            architecto eos!
+            <br>Ejemplo: <br>
+        </p>
+        <br>
+        <a href=".\example\img.html" target="_blank">Ejemplo de img</a> <br> <br>
+
+        <li>&lt;map&gt;</li>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus magnam, ipsam explicabo ducimus quo placeat
+            dolor optio sed doloribus, dicta natus pariatur unde dolorum suscipit omnis exercitationem eligendi
+            architecto eos!
+            <br>Ejemplo: <br>
+        </p>
+        <br>
+        <a href=".\example\map.html" target="_blank">Ejemplo de map</a> <br> <br>
+
+        <li>&lt;nav&gt;</li>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus magnam, ipsam explicabo ducimus quo placeat
+            dolor optio sed doloribus, dicta natus pariatur unde dolorum suscipit omnis exercitationem eligendi
+            architecto eos!
+            <br>Ejemplo: <br>
+        </p>
+        <br>
+        <a href="https:\\facebook.com" target="_blank">Facebook</a>
+        <!-- target="_blank" nos permite abrir una nueva pestaña -->
+        <a href="https:\\google.com" target="_blank">Google</a>
+        <!-- target="_blank" nos permite abrir una nueva pestaña -->
+        <a href="https:\\twitter.com" target="_blank">twitter</a>
+        <br> <br>
+
+        <li>&lt;p&gt;</li>
+        <p>Define un parrafo<br>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus fuga consectetur similique nemo nihil
+            recusandae impedit reprehenderit eaque assumenda, debitis maxime ad sequi praesentium nostrum, excepturi at
+            dignissimos! Molestiae, sequi!
+        </p>
+        <a href=".\example\p.html" target="_blank">Ejemplo de p</a> <br> <br>
+
+        <li>&lt;script&gt;</li>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit fuga optio animi nihil! Pariatur temporibus ad
+            adipisci quo! Placeat odio corrupti excepturi harum optio, similique enim voluptate accusamus tempore
+            sapiente.<br>
+            <br> <b>Ejemplo:</b> <i> cuando un navegador lee una hoja</i> <br>
+        </p>
+        <a href=".\example\script.html" target="_blank">Ejemplo de script</a> <br> <br>
+        
+        <li>&lt;style&gt;</li>
+        <p>se puede definir la nformacion con estilo <b>CSS</b> de un documento
+            <br> Ejemplo:
             <br> <br>
-            <li>&lt;audio&gt;</li>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eligendi laudantium reiciendis vero
-                cupiditate delectus sint eos perferendis totam, neque mollitia quae quaerat ex ab id porro rem sit
-                doloremque!</p>
-            Ejemplo <br> <br>
-            <audio controls>
-                <source src=".\audio\teclado-mecanografia.mp3" </audio>
-            </audio>
-            <br>
-            <li>&lt;button&gt;</li>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi eligendi laudantium reiciendis vero
-                cupiditate delectus sint eos perferendis totam, neque mollitia quae quaerat ex ab id porro rem sit
-                doloremque!</p>
-            <b>Sugenrencia:</b>Especifique siempre el type de un &lt;button&gt; , para indicar a lso navegadores que
-            tipo de boton es <br>
-            <b>Consejo: Puede diseñar botones facilmente con CSS</b><br> Ejemplo:
-            <br>
-            <button name="button 1" type="button">Click me</button>
-            <button name="button 2" type="button">Click me</button>
-            <br>
+        </p>
+        <li>&lt;section&gt;</li>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptatibus quasi, eaque delectus quidem
+            maxime laboriosam fugit non eum doloremque natus, modi repudiandae, sapiente eligendi in eos quam. Iusto,
+            vel?<br>
+            <br> <b>Ejemplo:</b> <i> cuando un navegador lee una hoja</i> <br>
+        </p>
+        <a href=".\example\section.html" target="_blank">Ejemplo de section</a> <br> <br>
     </ol>
 </body>
 
