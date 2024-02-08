@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            color: rgb(0, 99, 0);
+            text-decoration: overline;
+        }
+        a:visited{
+            color: hwb(20 0% 5%);
+        }
+        a:hover{
+            color:rgb(0, 213, 0)
+        }
+
+        .imagenes{
+            display: flex;
+            width: 80%;
+            margin: auto;
+            background-color: rgba(137, 43, 226, 0.727);
+            height: 150px;
+            
+            /* padding en todos los lados */
+            /* padding-top:15px ;
+            padding-right: 15px;
+            padding-bottom: 15px ;
+            padding-left: 15px; */
+            /* padding: 15px; */
+            /*        v    h */
+            padding: 15px 3px;
+            margin-top: 15px;
+            /*          top right bottom left*/
+            /* margin: 0px 0px 15px 0px; */
+
+
+
+        }
+        .imagenes img{
+            width: 25%;
+            opacity: 0.5;
+        }
+        
+        .imagenes img:hover{
+            opacity: 1;
+        }
+
+        section{
+            display: flex;
+            justify-content: center;
+            align-items: end;
+        }
+        button{
+            border-radius: 15px;
+            border-color: white;
+            background-color: white;
+            border: none;
+            color: rgba(0, 0, 0, 0.431);
+            margin-bottom: 5px;
+            /* letter-spacing: 15px; */
+            word-spacing: 15px;
+        }
+        button:hover{
+            background-color: black;
+            color: white;
+            width: 70%;
+            
+        }
+        .fondo-img{
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 25%;
+            text-align: center;
+        }
+
+        .perrito{
+            background-image: url("https://picsum.photos/id/1025/600/400");
+        }
+        .montaña{
+            background-image: url("https://picsum.photos/id/564/600/400");
+        }
+        .auto{
+            background-image: url("https://picsum.photos/id/111/600/400");
+        }
+        .desierto{
+            background-image: url("https://picsum.photos/id/184/600/400");
+        }
+        .img1{
+            background-image: url("https://picsum.photos/id/1026/600/400");
+        }
+        .img2{
+            background-image: url("https://picsum.photos/id/565/600/400");
+        }
+        .img3{
+            background-image: url("https://picsum.photos/id/112/600/400");
+        }
+        .img4{
+            background-image: url("https://escuelasdecodigo.cdmx.gob.mx/wp-content/themes/escuelasdecodigo/dist/assets/hero-vector.svg");
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#Link-1">Link 1</a>
+        <a href="#Link-2">Link 2</a>
+        <a href="#Link-3">Link 3</a>
+    </nav>
+    <div class="imagenes">
+        <section class="perrito fondo-img">
+            <button>Perritos adorables</button>
+        </section>
+        <section class="montaña fondo-img">
+            <button>Montaña</button>
+        </section>
+        <section class="auto fondo-img">
+            <button>Auto</button>
+        </section>
+        <section class="desierto fondo-img">
+            <button>Desierto</button>
+        </section>
+    </div>
+    <div class="imagenes">
+        <section class="img1 fondo-img">
+            <button>Perritos</button>
+        </section>
+        <section class="img2 fondo-img">
+            <button>Montaña</button>
+        </section>
+        <section class="img3 fondo-img">
+            <button>Auto</button>
+        </section>
+        <section class="img4 fondo-img">
+            <button>Desierto</button>
+        </section>
+    </div>
+</body>
+</html>
