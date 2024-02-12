@@ -5,33 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entregable 5</title>
     <style>
-        div{ 
-            border-bottom: 1px 
-            color:grey;
+        body{
+            font-family: Arial, sans-serif;
         }
+        div{ 
+            border-bottom: 2px solid #808080;
+            padding-top: 5px;
+            justify-content: flex-start;
+            /*background-color: rgb(161, 165, 42);*/
+        }
+/*nav {
+    display: flex;
+    height: 10vh;
+    justify-content: right;
+    align-self:center;
+    border: black 3px solid;
+}*/
+
         a{
             color:grey;
-            margin-left: 5px;
-            justify-content: left;
-            border-bottom: 2px;
-            border-color: blue;
+            /*border-bottom: 2px solid aqua;*/
+            width: 100%; 
+            /*height: 40px;  alto */
+            /*padding: 10px;*/
+            top:0;
+            margin: 5px 5px 5px 260px; 
+            background-color: #E8F2A1;
+           /* padding-top: 10px;
+            padding-bottom: 15px;*/
+            /*flex-direction: row-reverse;*/
+            /*float: left space-around;*/
+            /*align-content: space-around;*/
+           /* display: flex;
+            justify-content: right;*/
+            /*align-items: left; distribucion vertical*/
         }
-        /*a:visited{
-            color:red(20 0% 5%);
+
+        .d-flex,main{
+            display: flex;
         }
-        a:hover{
-            color:rgb(0, 213, 0)
-        }*/
 
         .imagenes{
             display: flex;
             width: 90%;
-            margin: center;
+            margin: 5px 5px 5px 5px;
+            justify-content: center;
+            
+            /*width="80" height="70" style="vertical-align:center"*/
             /*padding: 15px 3px;*/
             /*margin-top: 15px;*/
-            /*          top right bottom left*/
-            /* margin: 0px 0px 15px 0px; */
+            /*margin: 1px 1px 15px 1px*/
         }
+        /*
         .imagenes img{
             width: 25%;
             opacity: 0.5;
@@ -40,18 +65,36 @@
         .imagenes img:hover{
             opacity: 1;
         }
-
+        */
         section{
             display: flex;
             justify-content: center;
             align-items: end;
         }
+
+        p {
+            color: #d3ccab;
+            font-size: 18px;
+            text-align: center;
+            /*font-weight: bold;*/
+        }
+
+        /* Estilos para el párrafo con la clase "text" */
+        .text {
+            color: grey;
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+
         .fondo-img{
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
-            width: 25%;
+            width: 100%;
             text-align: center;
+            display: flex; /*distribucion  uniforme flex sobre el bloque*/
+            /*width: 100%   height="100";*/
+            justify-content: center;
         }
         .logo{
             background-image: url("https://escuelasdecodigo.cdmx.gob.mx/wp-content/themes/escuelasdecodigo/assets/images/logo.svg");
@@ -64,32 +107,62 @@
         }
     </style>
 </head>
-<header>
-    <div class="div">
-        <img src="./img/logo.svg" width="70" height="50" style="vertical-align:rigth">
-    </div>
-    <nav class="a">
-        <a href="#Residentes">Residentes</a>
-        <a href="#Negocios">Negocios</a>
-        <a href="#Visitantes">Visitantes</a>
-        <a href="#Gobierno">Gobierno</a>
-    </nav>
-</header>
-<main>
-    <div class="imagenes">
-        <!--<section class="foto fondo-img">-->
-        <img src="./img/hero.jpg" width="70" height="50" style="vertical-align:center">
-    <!--.selector {
-        background-image: url("ruta/de/la/imagen.jpg");
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-    }-->
-    <!--logo CDMX https://escuelasdecodigo.cdmx.gob.mx/wp-content/themes/escuelasdecodigo/assets/images/logo.svg-->
-    <!--imgen angel https://escuelasdecodigo.cdmx.gob.mx/wp-content/themes/escuelasdecodigo/dist/assets/hero.jpg-->
-    <!--Vector https://escuelasdecodigo.cdmx.gob.mx/wp-content/themes/escuelasdecodigo/dist/assets/hero-vector.svg-->
-</main>
 <body>
-    
+    <header>
+        <div class="div d-flex" >
+            <img src="https://escuelasdecodigo.cdmx.gob.mx/wp-content/themes/escuelasdecodigo/assets/images/logo.svg" width="70" height="50">
+            <br>
+        </div>
+        <nav class="a" style="background-color: aqua;">
+            <a href="#Residentes">Residentes</a>
+            <a href="#Negocios">Negocios</a>
+            <a href="#Visitantes">Visitantes</a>
+            <a href="#Gobierno">Gobierno</a>
+            <br>
+        </nav>
+    </header>
+
+    <main>
+        <section class="imagenes  fondo-img" style="background-color: #B0A1F2;">
+            <!--<section class="foto fondo-img">-->
+            <img src="https://escuelasdecodigo.cdmx.gob.mx/wp-content/themes/escuelasdecodigo/dist/assets/hero.jpg">
+            <table>
+                <!-- fila table row -->
+                <tr>
+                    <!-- Columnas encabezado  table head-->
+                    <th><img src="https://escuelasdecodigo.cdmx.gob.mx/wp-content/themes/escuelasdecodigo/dist/assets/hero-vector.svg"></th>
+                    <th>APRENDE A PROGRAMAR</th>
+                    <th></th>
+                </tr>
+                <!-- fila -->
+                <tr>
+                    <!-- dato de table : table data -->
+                    <td></td>
+                    <td>EN LAS</td>
+                    <td>ESCUELAS</td>
+                </tr>
+                <tr>            
+                    <td></td>
+                    <td></td>
+                    <td>DE CODIGO</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>DE LA CDMX</td>
+                </tr>
+            </table>
+
+        <!--logo CDMX https://escuelasdecodigo.cdmx.gob.mx/wp-content/themes/escuelasdecodigo/assets/images/logo.svg-->
+        <!--imgen angel https://escuelasdecodigo.cdmx.gob.mx/wp-content/themes/escuelasdecodigo/dist/assets/hero.jpg-->
+        <!--Vector https://escuelasdecodigo.cdmx.gob.mx/wp-content/themes/escuelasdecodigo/dist/assets/hero-vector.svg-->
+        </section>
+    </main>
+
+    <footer>
+        <p class="p" strong><b>¿Quien se puede inscribir?</b></p>       
+        <p class="text"><b>Cualquier persona que quiera aprendera programar codigo y cuente con 4 - 8 horas disponibles a la semana.</b></p>
+        <p class="text">*Menores de esdad deberan entrar a las instalaciones acompañados de un adulto.</p>
+    </footer>  
 </body>
 </html>

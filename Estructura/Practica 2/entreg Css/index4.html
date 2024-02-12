@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titulo de pagina</title>
+    <style>
+        .d-flex,main{
+            display: flex;
+            padding: 8px;
+            background-color:#75C9B7 ;
+        }
+        hgroup,div,article,footer{
+            padding: 8px;
+            border-radius: 1px;
+        }
+        nav{
+            padding: 10px;
+            background-color: #C7DDCC; 
+            align-content: space-around;
+        }
+        Section,aside{
+            border-width: 5px;
+            border-style: solid;
+            border-color: #C7DDCC;
+        }
+        .text-centro,h1,h2,h3{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+        <header>
+            <hgroup style="background-color: black; color:#CCE2CF">
+                <h1><strong>ENCABEZADO NIVEL 1</strong></h1>
+                <nav >
+                    <a href="#Enlace 1">Enlace 1</a>
+                    <a href="#Enlace 2">Enlace 2</a>
+                    <a href="#Enlace 3">Enlace 3</a>
+                    <a href="#Enlace 4">Enlace 4</a>
+                </nav>
+            </hgroup>
+
+        </header>
+        <main style="background-color: #75C9B7">
+            <section>
+                <article>
+                    <h2><b>Encabezado nivel 2</b></h2>
+                    <hgroup>
+                        <p>Aqui va texto del primer <b>párrafo</b> <br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam incidunt, ea nam consequatur modi exercitationem temporibus officiis, doloremque pariatur laboriosam optio quisquam harum laborum illum magnam libero vero sed ipsa?
+                        </p>
+                        <P>Aqui va texto del seguno párrafo <br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, velit? Iure expedita distinctio pariatur. Consequatur, dignissimos! Voluptatem optio eveniet non incidunt libero quos rem totam fugit itaque harum! Expedita, accusamus?
+                        </P>
+                    </hgroup>
+                </article>
+            </section>
+            <aside style="width: 50%;">
+                <div class="d-flex" style="background-color: #D9138A;">
+                    <form action="">
+                        <br>
+                            <h3><strong>Apartado</strong></h3> <br>
+                            <p>Elige una opción</p> <br>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Opción 1</label> <br>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Opción 2</label> <br>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Opción 3</label> <br>
+                            <br> <br>
+                            <input type="submit" value="Enviar" aling="center">
+                            <br>
+                    </form>
+                </div>
+            </aside>
+        </main>
+        <footer class="text-centro" style="background-color: #E2D810;">
+            <p>
+               Sección de información de contacto, derechos de autor, etc.
+            </p>
+        </footer>
+</body>
+</html>
