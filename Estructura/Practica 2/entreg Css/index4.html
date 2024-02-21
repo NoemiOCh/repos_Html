@@ -15,30 +15,43 @@
             border-radius: 1px;
         }
         nav{
+            display: flex;
+            width: 100%;
+            top: 0;
+            justify-content: space-around;
             padding: 10px;
             background-color: #C7DDCC; 
-            align-content: space-around;
+            text-align: center;
+        }
+        a{
+            font-weight: 700; 
+            text-decoration: none;
+            color: grey;
+            align-content: space-between;
         }
         Section,aside{
             border-width: 5px;
             border-style: solid;
             border-color: #C7DDCC;
         }
-        .text-centro,h1,h2,h3{
+        .text-centro,h1,h2{
             text-align: center;
         }
-
+        form {
+            width: 100%;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
         <header>
             <hgroup style="background-color: black; color:#CCE2CF">
                 <h1><strong>ENCABEZADO NIVEL 1</strong></h1>
-                <nav >
-                    <a href="#Enlace 1">Enlace 1</a>
-                    <a href="#Enlace 2">Enlace 2</a>
-                    <a href="#Enlace 3">Enlace 3</a>
-                    <a href="#Enlace 4">Enlace 4</a>
+                <nav class="nav a">
+                    <a href="#Enlace 1">ENLACE 1</a>
+                    <a href="#Enlace 2">ENLACE 2</a>
+                    <a href="#Enlace 3">ENLACE 3</a>
+                    <a href="#Enlace 4">ENLACE 4</a>
                 </nav>
             </hgroup>
 
@@ -59,9 +72,9 @@
             </section>
             <aside style="width: 50%;">
                 <div class="d-flex" style="background-color: #D9138A;">
-                    <form action="">
+                    <form class="form" action="">
                         <br>
-                            <h3><strong>Apartado</strong></h3> <br>
+                            <h2><strong>Apartado</strong></h2> <br>
                             <p>Elige una opción</p> <br>
                                 <input type="checkbox" name="" id="">
                                 <label for="">Opción 1</label> <br>

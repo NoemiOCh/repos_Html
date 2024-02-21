@@ -4,119 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entregable 5</title>
-    <style>
-        body{
-            font-family: Arial, sans-serif;
-        }
-        div{ 
-            border-bottom: 2px solid #808080;
-            padding-top: 5px;
-            justify-content: flex-start;
-            /*background-color: rgb(161, 165, 42);*/
-        }
-/*nav {
-    display: flex;
-    height: 10vh;
-    justify-content: right;
-    align-self:center;
-    border: black 3px solid;
-}*/
-
-        a{
-            color:grey;
-            /*border-bottom: 2px solid aqua;*/
-            width: 100%; 
-            /*height: 40px;  alto */
-            /*padding: 10px;*/
-            top:0;
-            margin: 5px 5px 5px 260px; 
-            background-color: #E8F2A1;
-           /* padding-top: 10px;
-            padding-bottom: 15px;*/
-            /*flex-direction: row-reverse;*/
-            /*float: left space-around;*/
-            /*align-content: space-around;*/
-           /* display: flex;
-            justify-content: right;*/
-            /*align-items: left; distribucion vertical*/
-        }
-
-        .d-flex,main{
-            display: flex;
-        }
-
-        .imagenes{
-            display: flex;
-            width: 90%;
-            margin: 5px 5px 5px 5px;
-            justify-content: center;
-            
-            /*width="80" height="70" style="vertical-align:center"*/
-            /*padding: 15px 3px;*/
-            /*margin-top: 15px;*/
-            /*margin: 1px 1px 15px 1px*/
-        }
-        
-        .imagenes img{
-            width: 25%;
-            opacity: 0.5;
-        }
-        .l-4{
-            /*background-color:yellow;*/
-            grid-column:3/4;/*1,2,3*/
-            grid-row:3/4;
-            font-size:30px;
-        }
-        
-        .vector{
-            /*background-color: black;*/
-        }
-        */
-        section{
-            display: flex;
-            justify-content: center;
-            align-items: end;
-        }
-
-        p {
-            color: #d3ccab;
-            font-size: 18px;
-            text-align: center;
-            /*font-weight: bold;*/
-        }
-
-        /* Estilos para el párrafo con la clase "text" */
-        .text {
-            color: grey;
-            font-size: 12px;
-            letter-spacing: 1px;
-        }
-
-        .fondo-img{
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            width: 100%;
-            text-align: center;
-            display: flex; /*distribucion  uniforme flex sobre el bloque*/
-            /*width: 100%   height="100";*/
-            justify-content: center;
-        }
-        p {
-            color: #d3ccab;
-            font-size: 18px;
-            text-align: center;
-            /*font-weight: bold;*/
-        }
-
-        /* Estilos para el párrafo con la clase "text" */
-        .text {
-            color: grey;
-            font-size: 12px;
-            letter-spacing: 1px;
-        }
-        
-    </style>
+    <link rel="stylesheet" href="..\CSS\style.css" type="text/css">
+    
 </head>
 <body>
     <header>
@@ -124,7 +13,7 @@
             <img src="https://escuelasdecodigo.cdmx.gob.mx/wp-content/themes/escuelasdecodigo/assets/images/logo.svg" width="70" height="50">
             <br>
         </div>
-        <nav class="a" style="background-color: aqua;">
+        <nav class="a" >
             <a href="#Residentes">Residentes</a>
             <a href="#Negocios">Negocios</a>
             <a href="#Visitantes">Visitantes</a>
@@ -134,39 +23,19 @@
     </header>
 
     <main>
-        <section class="imagenes  fondo-img" style="background-color: #B0A1F2;">
+        <section class="imagenes  fondo-img" >
             <!--<section class="foto fondo-img">-->
-            <img src="https://escuelasdecodigo.cdmx.gob.mx/wp-content/themes/escuelasdecodigo/dist/assets/hero.jpg">
-            <table>
-                <!-- fila table row -->
-                <tr>
-                    <!-- Columnas encabezado  table head-->
-                    <th><img src="https://escuelasdecodigo.cdmx.gob.mx/wp-content/themes/escuelasdecodigo/dist/assets/hero-vector.svg"></th>
-                    <th>APRENDE A PROGRAMAR</th>
-                    <th></th>
-                </tr>
-                <!-- fila -->
-                <tr>
-                    <!-- dato de table : table data -->
-                    <td></td>
-                    <td>EN LAS</td>
-                    <td>ESCUELAS</td>
-                </tr>
-                <tr>            
-                    <td></td>
-                    <td></td>
-                    <td>DE CODIGO</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td>DE LA CDMX</td>
-                </tr>
-            </table>
-
-        <!--logo CDMX https://escuelasdecodigo.cdmx.gob.mx/wp-content/themes/escuelasdecodigo/assets/images/logo.svg-->
-        <!--imgen angel https://escuelasdecodigo.cdmx.gob.mx/wp-content/themes/escuelasdecodigo/dist/assets/hero.jpg-->
-        <!--Vector https://escuelasdecodigo.cdmx.gob.mx/wp-content/themes/escuelasdecodigo/dist/assets/hero-vector.svg-->
+           <div class="letras-Grid" >    
+                <div class="letras-vector">
+                    <img src="https://escuelasdecodigo.cdmx.gob.mx/wp-content/themes/escuelasdecodigo/dist/assets/hero-vector.svg">
+                </div>
+                      <span class="l-1">Aprende a programar<br></span>
+                      <span class="l-2">En las</span>
+                      <span class="l-3">ESCUELAS<br>DE CÓDIGO<br></span>
+                      <span class="l-4">de la CDMX</span>
+                    
+                  </div>
+            </div>
         </section>
     </main>
 
